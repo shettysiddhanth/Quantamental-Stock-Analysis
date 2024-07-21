@@ -4,7 +4,7 @@ import time
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
-# InfluxDB settings
+
 token = 'MlUmh8wWKDAcBiZbBjvJPguGKxoON1ZRqFjVQ_zh8M3NHLcr53WnxbfXX_ByD0Wm7S8G0kb622gj2EX25MzFCA=='
 org = "Portfolio_Opt"
 url = "http://localhost:8080"
@@ -13,7 +13,7 @@ bucket = "Nifty50"
 client = InfluxDBClient(url=url, token=token, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
 
-# Directory containing the CSV files
+
 folder_path = '/Volumes/rog-phone5/NF_200/Nifty200_1h'
 nifty50_symbols = [
     "ADANIENT",  # Adani Enterprises Ltd.
@@ -69,13 +69,11 @@ nifty50_symbols = [
 ]
 
 
-# Iterate through each file in the directory
+
 for filename in os.listdir(folder_path):
     if filename.endswith('.csv'):
         file_path = os.path.join(folder_path, filename)
         
-        # Read the CSV file
-        # data = pd.read_csv(file_path)
         data = pd.read_csv(file_path, encoding='ISO-8859-1')  # Or try 'cp1252' if 'ISO-8859-1' doesn't work
         # print(data)
         
