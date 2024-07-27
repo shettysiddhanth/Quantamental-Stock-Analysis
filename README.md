@@ -2,7 +2,7 @@
 
 This repository contains a series of notebooks and scripts that demonstrate the application of various quantitative investment strategies on the NIFTY50 stock index. We utilize quantamental filters such as Basic EPS, Return on Networth/Equity, Current Ratio, PBIT Margin, and Return on Capital Employed to refine the stock universe significantly. Our strategies incorporate advanced financial modeling techniques, including Brownian motion and mean reversion, integrated with Markowitz analysis to construct a Global Minimum Variance (GMV) portfolio. Additionally, we implement CPPI strategies to manage risk and minimize drawdowns.
 
-\href{https://quantamental-stock-analysis.netlify.app/}{Dashboard}
+Dashboard : https://quantamental-stock-analysis.netlify.app/
 
 ## Project Outcomes
 - Refined the stock universe by up to 86% using quantamental filters.
